@@ -1,0 +1,51 @@
+---
+title: "Untitled"
+author: "Omar THIAM"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# Manipulation des données 
+## Importation 
+```{r}
+library(haven) # chargerment de la biblio haven
+datapath <- read_dta("cereales.dta")
+View(datapath)
+```
+
+## Comprendre la structure des données
+```{r}
+dim(datapath) # returns the dimension of the dataset  output nrow suividncol
+  nrow(datapath) #- returns the number of row (observations) 
+  ncol(datapath) #- returns the number of column (variables) 
+  names(datapath) #- returns all the name of variables
+  str(datapath) # caracteristiques des diff var ou infos generales sur la base
+  library(dplyr)
+  glimpse(datapath) # fourni un résumé utile et compact de sa structure interne.
+
+```
+
+
+## une autre façon de voir globalement la structuration
+```{r}
+summary(datapath)  # plus exhaustive
+```
+
+## une autre façon de voir globalement la structuration
+
+```{r}
+summary(datapath)  # plus exhaustive
+```
+
+## Voir les données 
+
+```{r}
+head(datapath, n=15) # affiche les 15 premières lignes; 
+tail(datapath, n=10) # affiche les 10 dernières lignes
+View(datapath)       # affiche la base (en quelques lignes)
+
+```
+

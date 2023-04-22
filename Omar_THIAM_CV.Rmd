@@ -1,0 +1,49 @@
+---
+title: CV Omar THIAM
+author: "Omar THIAM"
+date: "`r Sys.Date()`"
+output:
+beamer_presentation: default
+
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r}
+# install.packages(vitae)     # installer la biblio vitae
+# library("vitae")            # importation
+```
+
+# Informations personnelles
+```{r}
+cat ("Nom : Omar THIAM")
+cat ("Adresse : 123 Avenue Cheikh Anta DIOP, Dakar ")
+cat(" Téléphone : 770335518 ")
+cat ("Email : thiamomar928@gmail.com")
+```
+
+# Formation
+```{r}
+cat (" -Bac S1 en 2018
+ -deux annees de formation en mathematiques et physique a UCAD
+ -actuellement eleve ISE en deuxieme annee preparatoire")
+```
+
+# Compétences
+
+```{r}
+cat("  - Maitrise de Word,Excel,Powerpoint
+  - Programmation sous VBA
+  - maitrise de Spss,Stata, Gqis
+  - Programmation en R et Python
+  - Visualisation de données
+  - Communication ")
+```
+
+# Langues
+```{r}
+cat("  - Anglais : moyen
+  - Français : courant ")
+
+```
